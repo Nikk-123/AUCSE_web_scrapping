@@ -1,0 +1,212 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 21, 2025 at 02:29 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `aucse`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cse_22-26`
+--
+
+CREATE TABLE `cse_22-26` (
+  `name` varchar(255) NOT NULL,
+  `student_id` varchar(100) NOT NULL,
+  `roll_no` varchar(100) NOT NULL,
+  `sec` varchar(10) NOT NULL,
+  `aoi` varchar(255) NOT NULL DEFAULT 'N/A',
+  `email` varchar(250) NOT NULL,
+  `phone` bigint(12) NOT NULL,
+  `course` varchar(250) NOT NULL,
+  `year` int(5) NOT NULL,
+  `photo` varchar(100) NOT NULL,
+  `status` int(10) NOT NULL,
+  `upload_date_time` varchar(20) NOT NULL,
+  `twelfth_percentage` float NOT NULL,
+  `twelfth_school` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `cse_22-26`
+--
+
+INSERT INTO `cse_22-26` (`name`, `student_id`, `roll_no`, `sec`, `aoi`, `email`, `phone`, `course`, `year`, `photo`, `status`, `upload_date_time`, `twelfth_percentage`, `twelfth_school`) VALUES
+('Arijit Dey', 'AU/2022/0006880', 'UG/02/BTCSEAIML/2022/001', 'B', 'Cloud computing', 'nan', 0, 'AI and ML', 2022, 'AU20220006880.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Tithi Ghosh', 'AU/2022/0006916', 'UG/02/BTCSECSF/2022/010', 'B', 'Web development', 'nan', 0, 'CSF', 2022, 'AU20220006916.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ritusree Banerjee', 'AU/2022/0006917', 'UG/02/BTCSECSF/2022/001', 'B', 'Web development , Cyber security', 'nan', 0, 'CSF', 2022, 'AU20220006917.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Arindam Das', 'AU/2022/0006955', 'UG/02/BTCSE/2022/002', 'A', 'Data Science', 'arindam5.das@stu.adamasuniversity.ac.in', 7602176542, 'B.Tech. CSE (Core)', 2022, 'AU20220006955.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Arka Sarkar', 'AU/2022/0006977', 'UG/02/BTCSE/2022/004', 'A', 'AI & ML', 'arka.sarkar@stu.adamasuniversity.ac.in', 6294084243, 'B.Tech. CSE (Core)', 2022, 'AU20220006977.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Suman Mondal', 'AU/2022/0007000', 'UG/02/BTCSE/2022/005', 'A', 'AI/ML', 'suman2.mondal@stu.adamasuniversity.ac.in', 9883516227, 'B.Tech. CSE (Core)', 2022, 'AU20220007000.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Koushik Mondal', 'AU/2022/0007018', 'UG/02/BTCSE/2022/006', 'A', 'Data Structure', 'koushik.mondal@stu.adamasuniversity.ac.in', 7063592050, 'B.Tech. CSE (Core)', 2022, 'AU20220007018.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Kalyan Ghosh', 'AU/2022/0007021', 'UG/02/BTCSE/2022/007', 'A', 'Smartphone Technology', 'kalyan.ghosh@stu.adamasuniversity.ac.in', 9933985320, 'B.Tech. CSE (Core)', 2022, 'AU20220007021.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Priyanshu Jana', 'AU/2022/0007028', 'UG/02/BTCSE/2022/008', 'A', 'Smartphone Technology', 'priyanshu.jana@stu.adamasuniversity.ac.in', 9832355366, 'B.Tech. CSE (Core)', 2022, 'AU20220007028.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Imran Nazim Mallik', 'AU/2022/0007030', 'UG/02/BTCSE/2022/009', 'A', 'Smartphone Technology', 'mallik@stu.adamasuniversity.ac.in', 8967171270, 'B.Tech. CSE (Core)', 2022, 'AU20220007030.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Abhilash Sahana', 'AU/2022/0007055', 'UG/02/BTCSE/2022/010', 'A', 'Smartphone Technology', 'abhilash.sahana@stu.adamasuniversity.ac.in', 7872517455, 'B.Tech. CSE (Core)', 2022, 'AU20220007055.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Bhabajyati Bhatacharjya', 'AU/2022/0007081', 'UG/02/BTCSE/2022/011', 'A', 'Smartphone Technology', 'bhabajyati.bhattacharjya@stu.adamasuniversity.ac.in', 9101866920, 'B.Tech. CSE (Core)', 2022, 'AU20220007081.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Falguni Yadav', 'AU/2022/0007084', 'UG/02/BTCSE/2022/012', 'A', 'Smartphone Technology', 'falguni.yadav@stu.adamasuniversity.ac.in', 7501756156, 'B.Tech. CSE (Core)', 2022, 'AU20220007084.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Chayan Ghosh', 'AU/2022/0007086', 'UG/02/BTCSEAIML/2022/002', 'B', 'AI and ML', 'nan', 0, 'AI and ML', 2022, 'AU20220007086.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aniruddha Ghosh', 'AU/2022/0007114', 'UG/02/BTCSE/2022/014', 'A', 'Web and App Development', 'aniruddha.ghosh@stu.adamasuniversity.ac.in', 8910251626, 'B.Tech. CSE (Core)', 2022, 'AU20220007114.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ankita Nandy', 'AU/2022/0007117', 'UG/02/BTCSE/2022/091', 'C', 'Cybersecurity and Ethical Hacking', 'ankita.nandy@stu.adamasuniversity.ac.in', 9073887150, 'B.Tech. CSE (Core)', 2022, 'AU20220007117.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Utsab Das', 'AU/2022/0007132', 'UG/02/BTCSEAIML/2022/003', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007132.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soham Maity', 'AU/2022/0007134', 'UG/02/BTCSEAIML/2022/030', 'B', 'Coding', 'nan', 0, 'AI and ML', 2022, 'AU20220007134.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Asmita Ghosh', 'AU/2022/0007156', 'UG/02/BTCSECSF/2022/003', 'B', 'nan', 'nan', 0, 'CSF', 2022, 'AU20220007156.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soumyadip Giri', 'AU/2022/0007160', 'UG/02/BTCSE/2022/016', 'A', 'Music and Coding', 'soumyadip.giri@stu.adamasuniversity.ac.in', 7063291136, 'B.Tech. CSE (Core)', 2022, 'AU20220007160.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Rijwanool Karim', 'AU/2022/0007168', 'UG/02/BTCSEAIML/2022/004', 'B', 'AI, ML, Cloud computing,web Developement and Ui &Ux design etc', 'nan', 0, 'AI and ML', 2022, 'AU20220007168.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sk Mahiduzzaman', 'AU/2022/0007171', 'UG/02/BTCSEAIML/2022/005', 'B', 'AI and ML', 'nan', 0, 'AI and ML', 2022, 'AU20220007171.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Animesh Mukherjee', 'AU/2022/0007172', 'UG/02/BTCSEAIML/2022/006', 'B', 'Coding', 'nan', 0, 'AI and ML', 2022, 'AU20220007172.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Debjit Ghosh', 'AU/2022/0007179', 'UG/02/BTCSE/2022/017', 'A', 'nan', 'debjit.ghosh@stu.adamasuniversity.ac.in', 8597561432, 'B.Tech. CSE (Core)', 2022, 'AU20220007179.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Rahul Jawalkar', 'AU/2022/0007180', 'UG/02/BTCSEAIML/2022/007', 'B', 'AI and ML', 'nan', 0, 'AI and ML', 2022, 'AU20220007180.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Pritam halder', 'AU/2022/0007185', 'UG/02/BTCSE/2022/018', 'A', 'Computer', 'pritam.halder@stu.adamasuniversity.ac.in', 9432925905, 'B.Tech. CSE (Core)', 2022, 'AU20220007185.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Pratim Das', 'AU/2022/0007191', 'UG/02/BTCSEAIML/2022/008', 'B', 'Designing/ Coding', 'nan', 0, 'AI and ML', 2022, 'AU20220007191.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Devdinnya Roy', 'AU/2022/0007192', 'UG/02/BTCSEAIML/2022/009', 'B', 'Web development, AI&ML and cloud computing', 'nan', 0, 'AI and ML', 2022, 'AU20220007192.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Saadiyah Tasneem', 'AU/2022/0007193', 'UG/02/BTCSE/2022/019', 'A', 'AIML', 'saaditah.tasneem@ststadamasuniversity.ac.in', 6291689823, 'B.Tech. CSE (Core)', 2022, 'AU20220007193.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aniket Saha', 'AU/2022/0007194', 'UG/02/BTCSECSF/2022/004', 'B', 'Cyber security and forensic', 'nan', 0, 'CSF', 2022, 'AU20220007194.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ariyan Basu', 'AU/2022/0007208', 'UG/02/BTCSECSF/2022/020', 'B', 'nan', 'nan', 0, 'CSF', 2022, 'AU20220007208.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Akash Banerjee', 'AU/2022/0007223', 'UG/02/BTCSE/2022/021', 'A', 'Web Designing', 'akash.banarjee@stu.adamasuniversity.ac.in', 9564798461, 'B.Tech. CSE (Core)', 2022, 'AU20220007223.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Somrik Sur', 'AU/2022/0007224', 'UG/02/BTCSE/2022/022', 'A', 'Cloud Computing', 'somrik.sur@stu.adamasuniversity.ac.in', 6297536783, 'B.Tech. CSE (Core)', 2022, 'AU20220007224.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Snehasish Chowdhury', 'AU/2022/0007229', 'UG/02/BTCSE/2022/023', 'A', 'nan', 'snehasish.chowdhury@stu.adamasuniversity.ac.in', 6290393534, 'B.Tech. CSE (Core)', 2022, 'AU20220007229.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anwesha ghosh', 'AU/2022/0007233', 'UG/02/BTCSE/2022/024', 'A', 'Cyber security and AIML', 'anwesha2.ghosh@stu.adamasuniversity.ac.in', 9875343922, 'B.Tech. CSE (Core)', 2022, 'AU20220007233.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Agnik Karmakar', 'AU/2022/0007286', 'UG/02/BTCSE/2022/025', 'A', 'Web development', 'agnik.karmakar@stu.adamasuniversity.ac.in', 7439635474, 'B.Tech. CSE (Core)', 2022, 'AU20220007286.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Jitendar Kumar Singh', 'AU/2022/0007289', 'UG/02/BTCSE/2022/026', 'A', 'Managment and Project', 'jitendar.singh@stu.adamasuiversity.ac.in', 8340218891, 'B.Tech. CSE (Core)', 2022, 'AU20220007289.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Dibyasree Mukherjee', 'AU/2022/0007294', 'UG/02/BTCSEAIML/2022/010', 'B', 'AI, robotics, coding, content writing and public speaking', 'nan', 0, 'AI and ML', 2022, 'AU20220007294.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Debiya Singh', 'AU/2022/0007295', 'UG/02/BTCSEAIML/2022/011', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007295.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Milan Maji', 'AU/2022/0007305', 'UG/02/BTCSE/2022/027', 'A', 'Percussion, Art and Craft , Sports', 'milan.maji@stu.adamasuniversity.ac.in', 8210100544, 'B.Tech. CSE (Core)', 2022, 'AU20220007305.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Subarna Mondal', 'AU/2022/0007313', 'UG/02/BTCSE/2022/028', 'A', 'Percussion, Art and Craft , Sports', 'subarna.mondal@adamasuniversity.ac.in', 8145191309, 'B.Tech. CSE (Core)', 2022, 'AU20220007313.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Pritam Singha', 'AU/2022/0007323', 'UG/02/BTCSEAIML/2022/028', 'B', 'Ai and ml ,web development', 'nan', 0, 'AI and ML', 2022, 'AU20220007323.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Arghya Das', 'AU/2022/0007337', 'UG/02/BTCSE/2022/031', 'A', 'nan', 'arghya.das@stu.adamasuniversity.ac.in', 9734807655, 'B.Tech. CSE (Core)', 2022, 'AU20220007337.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Jyotirmoy Malo', 'AU/2022/0007342', 'UG/02/BTCSE/2022/032', 'A', 'Computers', 'jyotirmoy.malo@stu.adamasuniversity.ac.in', 8240819680, 'B.Tech. CSE (Core)', 2022, 'AU20220007342.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Suraj Samanta', 'AU/2022/0007349', 'UG/02/BTCSE/2022/033', 'A', 'Computer science', 'suraj.samanta@stu.adamas.university.ac.in', 9883937353, 'B.Tech. CSE (Core)', 2022, 'AU20220007349.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Angshuman Hazra', 'AU/2022/0007374', 'UG/02/BTCSECSF/2022/005', 'B', 'Coding', 'nan', 0, 'CSF', 2022, 'AU20220007374.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Susmik Maiti', 'AU/2022/0007379', 'UG/02/BTCSE/2022/034', 'A', 'nan', 'susmik.maiti@stu.adamasuniversity.ac.in', 8638468669, 'B.Tech. CSE (Core)', 2022, 'AU20220007379.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Jasimuddin sk', 'AU/2022/0007385', 'UG/02/BTCSE/2022/036', 'A', 'nan', 'jasimuddin.sk@stu.adamasuniversity.ac.in', 7908490184, 'B.Tech. CSE (Core)', 2022, 'AU20220007385.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Mominul Hoque', 'AU/2022/0007387', 'UG/02/BTCSEAIML/2022/012', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007387.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ramkrishna Chowdhury', 'AU/2022/0007393', 'UG/02/BTCSECSF/2022/006', 'B', 'Sketching', 'nan', 0, 'CSF', 2022, 'AU20220007393.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Shubhanshi Gupta', 'AU/2022/0007421', 'UG/02/BTCSE/2022/037', 'A', 'nan', 'shubhanshi.gupta@stu.adamasuniversity.ac.in', 9073864495, 'B.Tech. CSE (Core)', 2022, 'AU20220007421.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Avijit Ray', 'AU/2022/0007422', 'UG/02/BTCSE/2022/038', 'A', 'nan', 'avijit.ray@stu.adamasuniversity.ac.in', 7098708088, 'B.Tech. CSE (Core)', 2022, 'AU20220007422.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Subhadeep Hatai', 'AU/2022/0007434', 'UG/02/BTCSE/2022/039', 'A', 'Graphics designing', 'subhadeep.hatai@stu.adamasuniversity.ac.in', 7384928999, 'B.Tech. CSE (Core)', 2022, 'AU20220007434.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sayan Ray', 'AU/2022/0007441', 'UG/02/BTCSE/2022/040', 'A', 'nan', 'sayan.ray@stu.adamasuniversity.ac.in', 6294415023, 'B.Tech. CSE (Core)', 2022, 'AU20220007441.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Dibbesh Pal', 'AU/2022/0007456', 'UG/02/BTCSE/2022/041', 'A', 'Coding', 'dibbesh.pal@stu.adamasuniversity.ac.in', 8420116446, 'B.Tech. CSE (Core)', 2022, 'AU20220007456.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Bishal Banik', 'AU/2022/0007465', 'UG/02/BTCSE/2022/042', 'A', 'Web Designing', 'bishal.banik@stu.adamasuniversity.ac.in', 8474805524, 'B.Tech. CSE (Core)', 2022, 'AU20220007465.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Arghadeep Das', 'AU/2022/0007479', 'UG/02/BTCSEAIML/2022/013', 'B', 'Softwaremaking and game developing', 'nan', 0, 'AI and ML', 2022, 'AU20220007479.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sukamal Pal', 'AU/2022/0007503', 'UG/02/BTCSE/2022/043', 'A', 'nan', 'sukamal.pal@stu.adamasuniversity.ac.in ', 7629907167, 'B.Tech. CSE (Core)', 2022, 'AU20220007503.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Nilkamal Pal', 'AU/2022/0007504', 'UG/02/BTCSE/2022/044', 'A', 'Smartphone Technology', 'nilkamal.pal@stu.adamasuniversity.ac.in', 9362141920, 'B.Tech. CSE (Core)', 2022, 'AU20220007504.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Joydeep Saha', 'AU/2022/0007505', 'UG/02/BTCSE/2022/045', 'A', 'nan', 'joydeep.saha@stu.adamasuniversity.ac.in', 8509488418, 'B.Tech. CSE (Core)', 2022, 'AU20220007505.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aritra Bose', 'AU/2022/0007507', 'UG/02/BTCSE/2022/046', 'A', 'nan', 'aritra.1bose@stu.adamasuniversity.ac.in', 9382192133, 'B.Tech. CSE (Core)', 2022, 'AU20220007507.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Meghna Mondal', 'AU/2022/0007520', 'UG/02/BTCSE/2022/047', 'A', 'Web Development', 'meghna.mondal@stu.adamasuniversity.ac.in', 7318953032, 'B.Tech. CSE (Core)', 2022, 'AU20220007520.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Suvadip Khanra', 'AU/2022/0007546', 'UG/02/BTCSE/2022/048', 'A', 'ML', 'suvadip.khanra@stu.adamasuniversity.ac.in', 8389827284, 'B.Tech. CSE (Core)', 2022, 'AU20220007546.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Hrishav Dey', 'AU/2022/0007547', 'UG/02/BTCSECSF/2022/007', 'B', 'Cybersecurity And Forensics', 'nan', 0, 'CSF', 2022, 'AU20220007547.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Swagata Rana', 'AU/2022/0007550', 'UG/02/BTCSE/2022/049', 'A', 'Dance, Sing and Drawing', 'swagata.rana@stu.adamasuniversity.ac.in', 7044459093, 'B.Tech. CSE (Core)', 2022, 'AU20220007550.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anish Biswas', 'AU/2022/0007557', 'UG/02/BTCSE/2022/050', 'A', 'nan', 'anish.biswas@stu.adamasuniversity.ac.in', 8207200245, 'B.Tech. CSE (Core)', 2022, 'AU20220007557.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sneha Upadhyay', 'AU/2022/0007561', 'UG/02/BTCSE/2022/051', 'A', 'Robotics', 'sneha.upadhyay@stu.adamasuniversity.ac.in', 9382860319, 'B.Tech. CSE (Core)', 2022, 'AU20220007561.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Abin Biswas', 'AU/2022/0007567', 'UG/02/BTCSE/2022/052', 'A', 'Web Designing', 'abin.biswas@stu.adamasuniversity.ac.in', 7363841969, 'B.Tech. CSE (Core)', 2022, 'AU20220007567.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Souradeep Bhattacharya', 'AU/2022/0007577', 'UG/02/BTCSEAIML/2022/014', 'B', 'Computer science', 'nan', 0, 'AI and ML', 2022, 'AU20220007577.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Utsa Maiti', 'AU/2022/0007579', 'UG/02/BTCSE/2022/053', 'A', 'nan', 'utsa.maiti@stu.adamasuniversity.ac.in', 9007465833, 'B.Tech. CSE (Core)', 2022, 'AU20220007579.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ruchi Singh', 'AU/2022/0007587', 'UG/02/BTCSE/2022/054', 'A', 'Mathematics', 'ruchi.singh@stu.adamasuniversity.ac.in', 8146945121, 'B.Tech. CSE (Core)', 2022, 'AU20220007587.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Chaiti Bain', 'AU/2022/0007589', 'UG/02/BTCSE/2022/055', 'A', 'nan', 'chaiti.bain@stu.adamasuniversity.ac.in', 9123355433, 'B.Tech. CSE (Core)', 2022, 'AU20220007589.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Souvik Pramanik', 'AU/2022/0007603', 'UG/02/BTCSE/2022/056', 'A', 'Cyber Security', 'souvik@stu.adamasuniversity.ac.in', 9609995868, 'B.Tech. CSE (Core)', 2022, 'AU20220007603.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aditya Maity', 'AU/2022/0007607', 'UG/02/BTCSE/2022/057', 'A', 'Cricket', 'aditya.maity@stu.adamasuniversity.ac.in', 8420543811, 'B.Tech. CSE (Core)', 2022, 'AU20220007607.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Rhitam Basu', 'AU/2022/0007622', 'UG/02/BTCSEAIML/2022/015', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007622.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sourashis Dey', 'AU/2022/0007636', 'UG/02/BTCSE/2022/058', 'A', 'AIML', 'sourashis.dey@stu.adamasuniversity.ac.in', 8972521201, 'B.Tech. CSE (Core)', 2022, 'AU20220007636.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Susmit Paul', 'AU/2022/0007640', 'UG/02/BTCSE/2022/059', 'A', 'AIML', 'susmit.paul@stu.adamasuniversity.ac.in', 9153123835, 'B.Tech. CSE (Core)', 2022, 'AU20220007640.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sumana Manna', 'AU/2022/0007650', 'UG/02/BTCSEAIML/2022/016', 'B', 'AIML, Web Development', 'nan', 0, 'AI and ML', 2022, 'AU20220007650.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Dewarshi Chakraborty', 'AU/2022/0007659', 'UG/02/BTCSEAIML/2022/017', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007659.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Tamanna Saha', 'AU/2022/0007686', 'UG/02/BTCSE/2022/060', 'A', 'nan', 'tamanna.saha@stu.adamasuniversity.ac.in', 7005410422, 'B.Tech. CSE (Core)', 2022, 'AU20220007686.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Lipakshi Shaw', 'AU/2022/0007691', 'UG/02/BTCSE/2022/061', 'B', 'Web development and AI', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007691.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soumen Gope', 'AU/2022/0007693', 'UG/02/BTCSEAIML/2022/018', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007693.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Babu Prince', 'AU/2022/0007710', 'UG/02/BTCSE/2022/062', 'B', 'nan', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007710.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soham Chowdhury', 'AU/2022/0007744', 'UG/02/BTCSE/2022/063', 'B', 'Cloud Computing', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007744.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Mugdho Ghosh', 'AU/2022/0007746', 'UG/02/BTCSE/2022/064', 'B', 'Programing', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007746.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Shouryadip Bera', 'AU/2022/0007757', 'UG/02/BTCSE/2022/065', 'B', 'Frontend & Back-end web development', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007757.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Avijeet Kurmi', 'AU/2022/0007768', 'UG/02/BTCSECSF/2022/008', 'B', 'Coding', 'nan', 0, 'CSF', 2022, 'AU20220007768.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sanandita Saha', 'AU/2022/0007794', 'UG/02/BTCSEAIML/2022/019', 'B', 'Cloud computing, hacking and AI', 'nan', 0, 'AI and ML', 2022, 'AU20220007794.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sayan Mandal', 'AU/2022/0007797', 'UG/02/BTCSECSF/2022/021', 'B', 'nan', 'nan', 0, 'CSF', 2022, 'AU20220007797.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Subhadeep Mistri', 'AU/2022/0007809', 'UG/02/BTCSE/2022/067', 'B', 'Music, photography And video editing', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007809.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Prasenjit Datta', 'AU/2022/0007820', 'UG/02/BTCSE/2022/068', 'B', 'Smartphone Technology', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007820.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Suhana Sabnam', 'AU/2022/0007834', 'UG/02/BTCSE/2022/069', 'B', 'Cyber security and forensic,robotics and machine learning', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007834.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Saurav Raj', 'AU/2022/0007853', 'UG/02/BTCSEAIML/2022/020', 'B', 'AI and ML', 'nan', 0, 'AI and ML', 2022, 'AU20220007853.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Shaad Zaman', 'AU/2022/0007871', 'UG/02/BTCSEAIML/2022/021', 'B', 'AI and ML', 'nan', 0, 'AI and ML', 2022, 'AU20220007871.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sujal Kr Sil', 'AU/2022/0007882', 'UG/02/BTCSE/2022/070', 'B', 'nan', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007882.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Dipty Keshari', 'AU/2022/0007885', 'UG/02/BTCSE/2022/071', 'B', 'Web Development, Game development and AI', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007885.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Subhadwip Bari', 'AU/2022/0007890', 'UG/02/BTCSE/2022/072', 'B', 'nan', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007890.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sohel Khan', 'AU/2022/0007893', 'UG/02/BTCSE/2022/073', 'B', 'nan', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007893.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Priyanshu Pal', 'AU/2022/0007920', 'UG/02/BTCSE/2022/074', 'B', 'Coding', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007920.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soham Paul', 'AU/2022/0007935', 'UG/02/BTCSEAIML/2022/022', 'B', 'App Development', 'nan', 0, 'AI and ML', 2022, 'AU20220007935.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Megha Chakrabortty', 'AU/2022/0007936', 'UG/02/BTCSE/2022/075', 'B', 'Web development and AI', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220007936.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Hasim Paik', 'AU/2022/0007945', 'UG/02/BTCSEAIML/2022/023', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007945.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Abhirup Kumar', 'AU/2022/0007968', 'UG/02/BTCSEAIML/2022/024', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220007968.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anurag Saha', 'AU/2022/0007974', 'UG/02/BTCSE/2022/078', 'C', 'Cricket', 'anurag.saha@stu.adamasuniversity.ac.in', 8371009613, 'B.Tech. CSE (Core)', 2022, 'AU20220007974.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Bijoy Das', 'AU/2022/0007976', 'UG/02/BTCSE/2022/079', 'C', 'AI', 'bijoy1.das@stu.adamasuniversity.ac.in', 6033197635, 'B.Tech. CSE (Core)', 2022, 'AU20220007976.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Nasrin Sultana', 'AU/2022/0007983', 'UG/02/BTCSE/2022/080', 'C', 'Badminton', 'nasrin2.sultana@stu.adamasuniversity.ac.in', 8697076429, 'B.Tech. CSE (Core)', 2022, 'AU20220007983.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sourin Singha', 'AU/2022/0007985', 'UG/02/BTCSEAIML/2022/025', 'B', 'Automobile designing', 'nan', 0, 'AI and ML', 2022, 'AU20220007985.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Md NaJam Siddiqui', 'AU/2022/0007987', 'UG/02/BTCSE/2022/081', 'C', 'Smartphone Technology', 'najam.siddiqui@stu.adamasuniversity.ac.in', 7564950685, 'B.Tech. CSE (Core)', 2022, 'AU20220007987.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Nabhajit Roy', 'AU/2022/0008040', 'UG/02/BTCSE/2022/082', 'C', 'Data science', 'nabhajit.roy@stu.adamasuniversity.ac.in', 6289520988, 'B.Tech. CSE (Core)', 2022, 'AU20220008040.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sonalika Roy', 'AU/2022/0008063', 'UG/02/BTCSECSF/2022/009', 'B', 'Cyber security and forensic', 'nan', 0, 'CSF', 2022, 'AU20220008063.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ritika Shaw', 'AU/2022/0008082', 'UG/02/BTCSE/2022/083', 'B', 'Software development', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220008082.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Adrija Ghosh', 'AU/2022/0008098', 'UG/02/BTCSE/2022/085', 'B', 'nan', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220008098.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Roumyadip Patra', 'AU/2022/0008112', 'UG/02/BTCSE/2022/086', 'C', 'nan', 'roumyadip.patra@stu.adamasuniversity.ac.in', 8597882693, 'B.Tech. CSE (Core)', 2022, 'AU20220008112.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('P M Satyanarayanan', 'AU/2022/0008115', 'UG/02/BTCSEAIML/2022/026', 'B', 'AI, Machine learning and economy', 'nan', 0, 'AI and ML', 2022, 'AU20220008115.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sampriti Dhar', 'AU/2022/0008160', 'UG/02/BTCSE/2022/087', 'C', 'Smartphone Technology', 'sampriti.dhar@stu.adamasuniversity.ac.in', 9433110070, 'B.Tech. CSE (Core)', 2022, 'AU20220008160.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aaliya Khurshid', 'AU/2022/0008177', 'UG/02/BTCSEAIML/2022/027', 'B', 'Writing', 'nan', 0, 'AI and ML', 2022, 'AU20220008177.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Apurba Laskar', 'AU/2022/0008199', 'UG/02/BTCSE/2022/088', 'C', 'nan', 'apurba.laskar@stu.adamasuniversity.ac.in', 7085444762, 'B.Tech. CSE (Core)', 2022, 'AU20220008199.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aritra Mondal', 'AU/2022/0008213', 'UG/02/BTCSE/2022/089', 'C', 'AI', 'aritra.mondal@stu.adamasuniversity.ac.in', 9564856778, 'B.Tech. CSE (Core)', 2022, 'AU20220008213.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Diptendu Pal', 'AU/2022/0008230', 'UG/02/BTCSE/2022/093', 'C', 'Cybersecurity', 'diptendu.pal@stu.adamasuniversity.ac.in', 7439481545, 'B.Tech. CSE (Core)', 2022, 'AU20220008230.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sk. Ijajuddin Mohhammad', 'AU/2022/0008232', 'UG/02/BTCSE/2022/094', 'C', 'nan', 'ijajuddin.ahammad@stu.adamasuniversity.ac.in', 8918063895, 'B.Tech. CSE (Core)', 2022, 'AU20220008232.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anubhab Debnath', 'AU/2022/0008236', 'UG/02/BTCSE/2022/095', 'C', 'Game Development and Artificial intelligence', 'anubhab.debnath@stu.adamasuniversity.ac.in', 8697162979, 'B.Tech. CSE (Core)', 2022, 'AU20220008236.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soham Chakraborty', 'AU/2022/0008250', 'UG/02/BTCSEAIML/2022/029', 'B', 'Artificial intelligence', 'nan', 0, 'AI and ML', 2022, 'AU20220008250.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Tushar Mandal', 'AU/2022/0008273', 'UG/02/BTCSEAIML/2022/031', 'B', 'AIML', 'nan', 0, 'AI and ML', 2022, 'AU20220008273.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Mandvi', 'AU/2022/0008302', 'UG/02/BTCSE/2022/098', 'C', 'nan', 'mandvi@stu.adamasuniversity.ac.in', 9264287560, 'B.Tech. CSE (Core)', 2022, 'AU20220008302.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Tanisha Islam', 'AU/2022/0008336', 'UG/02/BTCSE/2022/099', 'C', 'Data Analytics, Artificial Intelligence And Cloud Computing', 'tanisha.islam@stu.adamasuniversity.ac.in', 8967408090, 'B.Tech. CSE (Core)', 2022, 'AU20220008336.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Surojit Mondal', 'AU/2022/0008380', 'UG/02/BTCSE/2022/101', 'C', 'Coding and Robotics', 'surojit1.mondal@stu.adamasuniversity.ac.in', 7872074546, 'B.Tech. CSE (Core)', 2022, 'AU20220008380.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soujatya Bhunia', 'AU/2022/0008391', 'UG/02/BTCSE/2022/102', 'C', 'Coding and Robotics', 'soujatya.bhunia@stu.adamasuniversity.ac.in', 8250776861, 'B.Tech. CSE (Core)', 2022, 'AU20220008391.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Souharda Shikhar Biswas', 'AU/2022/0008402', 'UG/02/BTCSE/2022/103', 'C', 'IT and robotics', 'souhardashikhar.biswas@stu.adamasuniversity.ac.in', 8583946722, 'B.Tech. CSE (Core)', 2022, 'AU20220008402.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Karan Dey', 'AU/2022/0008404', 'UG/02/BTCSE/2022/104', 'C', 'Cybersecurity , AIML ,Web designing and web development', 'karan.dey@stu.adamasuniversity.ac.in', 9163125302, 'B.Tech. CSE (Core)', 2022, 'AU20220008404.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sk.Rajiuddin', 'AU/2022/0008408', 'UG/02/BTCSE/2022/105', 'C', 'Artificial Intelligence', 'sk.rajiuddin@stu.adamasuniversity.ac.in', 8479804289, 'B.Tech. CSE (Core)', 2022, 'AU20220008408.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Partha Pratim Majumdar', 'AU/2022/0008410', 'UG/02/BTCSE/2022/106', 'C', 'nan', 'parthapratim.majumdar@stu.adamasuniversity.ac.in', 8100405890, 'B.Tech. CSE (Core)', 2022, 'AU20220008410.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Achismita Dey', 'AU/2022/0008416', 'UG/02/BTCSECSF/2022/012', 'B', 'AI,ML,CLOUD COMPUTING', 'nan', 0, 'CSF', 2022, 'AU20220008416.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Nilashis Saha', 'AU/2022/0008418', 'UG/02/BTCSE/2022/107', 'C', 'AIML', 'nilashis.saha@stu.adamasuniversity.ac.in', 7980884737, 'B.Tech. CSE (Core)', 2022, 'AU20220008418.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Agnikan Mahato', 'AU/2022/0008443', 'UG/02/BTCSE/2022/108', 'C', 'Cyber security', 'agnikan.mahato@stu.adamasuniversity.ac.in', 8016514113, 'B.Tech. CSE (Core)', 2022, 'AU20220008443.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Moumita Halder', 'AU/2022/0008457', 'UG/02/BTCSE/2022/109', 'C', 'Cloud computing, data science and artificial intelligence', 'moumita.halder@stu.adamasuniversity.ac.in', 9330873966, 'B.Tech. CSE (Core)', 2022, 'AU20220008457.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Soumyadeep Chakraborty', 'AU/2022/0008459', 'UG/02/BTCSEAIML/2022/032', 'B', 'Artificial intelligence', 'nan', 0, 'AI and ML', 2022, 'AU20220008459.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Chayan Das', 'AU/2022/0008461', 'UG/02/BTCSE/2022/110', 'C', 'AI', 'chayan.das@stu.adamasuniversity.ac.in', 7044134667, 'B.Tech. CSE (Core)', 2022, 'AU20220008461.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Abhishek Kumar', 'AU/2022/0008463', 'UG/02/BTCSE/2022/111', 'C', 'nan', 'abhishek2.kumar@stu.adamasuniversity.ac.in', 9546853383, 'B.Tech. CSE (Core)', 2022, 'AU20220008463.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Goutam Kumar Mishra', 'AU/2022/0008465', 'UG/02/BTCSE/2022/112', 'C', 'Cyber security and data science', 'goutam.mishra@stu.adamasuniversity.ac.in', 7003205620, 'B.Tech. CSE (Core)', 2022, 'AU20220008465.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Apurba Pal', 'AU/2022/0008482', 'UG/02/BTCSE/2022/114', 'C', 'Smartphone Technology', 'apurba.pal@stu.adamasuniversity.ac.in', 9864803424, 'B.Tech. CSE (Core)', 2022, 'AU20220008482.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Ankan Sahoo', 'AU/2022/0008491', 'UG/02/BTCSEAIML/2022/033', 'B', 'AI, ML, Cloud computing, web Development', 'nan', 0, 'AI and ML', 2022, 'AU20220008491.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Poulami Karmakar', 'AU/2022/0008502', 'UG/02/BTCSE/2022/115', 'C', 'Cyber Security', 'poulami.karmakar@stu.adamasuniversity.ac.in', 9903371737, 'B.Tech. CSE (Core)', 2022, 'AU20220008502.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Rudra Guha', 'AU/2022/0008521', 'UG/02/BTCSE/2022/116', 'C', 'Artificial Intelligence', 'rudra.guha@stu.adamasuniversity.ac.in', 7059431276, 'B.Tech. CSE (Core)', 2022, 'AU20220008521.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Suvendu Dash Adhikary', 'AU/2022/0008540', 'UG/02/BTCSE/2022/117', 'C', 'Artificial Intelligence', 'suvendu.dashadhikary@stu.adamasuniversity.ac.in', 7501142223, 'B.Tech. CSE (Core)', 2022, 'AU20220008540.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Amit Maurya', 'AU/2022/0008544', 'UG/02/BTCSE/2022/118', 'C', 'Defence', 'amit.maurya@stu.adamasuniversity.ac.in', 9748317810, 'B.Tech. CSE (Core)', 2022, 'AU20220008544.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Samyak Karmakar', 'AU/2022/0008565', 'UG/02/BTCSE/2022/119', 'A', 'Law and History', 'samyak.karmakar@stu.adamasuniversity.ac.in', 9531602497, 'B.Tech. CSE (Core)', 2022, 'AU20220008565.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Isha Gopinath Mallick', 'AU/2022/0008567', 'UG/02/BTCSE/2022/120', 'C', 'nan', 'ishagopinath.mallick@stu.adamasuniversity.ac.in', 8240426849, 'B.Tech. CSE (Core)', 2022, 'AU20220008567.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aditya Yadav', 'AU/2022/0008575', 'UG/02/BTCSE/2022/121', 'C', 'Blockchain', 'aditya.yadav@stu.adamasuniversity.ac.in', 8622912977, 'B.Tech. CSE (Core)', 2022, 'AU20220008575.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Abhishek Kumar', 'AU/2022/0008579', 'UG/02/BTCSE/2022/122', 'B', 'Back-end development', 'nan', 0, 'B.Tech. CSE (Core)', 2022, 'AU20220008579.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Priyanshu Sekhar Pandey', 'AU/2022/0008594', 'UG/02/BTCSE/2022/123', 'A', 'AI', 'priyanshusekhar.pandey@stu.adamasuniversity.ac.in', 8695295661, 'B.Tech. CSE (Core)', 2022, 'AU20220008594.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Dyutiprava Jana', 'AU/2022/0008599', 'UG/02/BTCSE/2022/124', 'A', 'nan', 'dyutiprava.jana@stu.adamasuniversity.ac.in', 9932275770, 'B.Tech. CSE (Core)', 2022, 'AU20220008599.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anisha Hasan', 'AU/2022/0008657', 'UG/02/BTCSECSF/2022/013', 'B', 'Forensic intelligence', 'nan', 0, 'CSF', 2022, 'AU20220008657.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Aditya Kumar', 'AU/2022/0008669', 'UG/02/BTCSEAIML/2022/034', 'B', 'nan', 'nan', 0, 'AI and ML', 2022, 'AU20220008669.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Subhum Kundu', 'AU/2022/0008699', 'UG/02/BTCSE/2022/127', 'A', 'nan', 'subham.kundu@stu.adamasuniversity.ac.in', 9365692227, 'B.Tech. CSE (Core)', 2022, 'AU20220008699.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Sandip kumar', 'AU/2022/0008778', 'UG/02/BTCSE/2022/128', 'C', 'nan', 'sandip.dey@stu.adamasuniversity.ac.in', 9883729795, 'B.Tech. CSE (Core)', 2022, 'AU20220008778.jpg', 1, '2025-02-21 09:13 AM', 0, 'na'),
+('Anuraj Das', 'AU/2022/0008806', 'UG/02/BTCSE/2022/129', 'C', 'Front-end development', 'anuraj.das@stu.adamasuniversity.ac.in', 9351899916, 'B.Tech. CSE (Core)', 2022, 'AU20220008806.jpg', 1, '2025-02-21 09:13 AM', 0, 'na');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
